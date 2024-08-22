@@ -32,7 +32,6 @@ nav ul {
   display: flex;
   column-gap: 40px;
   align-items: center;
-  justify-content: flex-end;
 }
 nav li {
   text-align: center;
@@ -43,14 +42,13 @@ nav li {
   column-gap: 40px;
 }
 .pic {
-  max-height: 100px;
+  max-width: 7vw;
 }
 main {
   width: 100vw;
   margin: 0 auto;
   background-color: #ffffff;
-  
-  height: 82vh;
+
 }
 .heading {
   padding: 40px;
@@ -67,18 +65,23 @@ h1 {
   padding-bottom: 40px;
   width: 60vw;
   margin: 0 auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 40px;
   justify-items: center;
 }
 .card-wrapper {
-  width: 16vw;
+  max-width: 30vw;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   color: #000000;
-  padding: 20px;}
+  padding: 20px;
+}
+.card-wrapper:nth-child(3) {
+  grid-column-start: 1;
+}
+
 img {
-  width: 	13.023vw;
+  width: 	25vw;
   border-radius: 10px;
 }
 .card {
